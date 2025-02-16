@@ -1,0 +1,99 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #ffb3c1;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://images.unsplash.com/photo-1562070020-b61c309fdddb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjYxOXwwfDF8c2VhY2h8Mnx8dmFsZW50aW5rfGVufDB8fHx8fDE2NzgwOTk3NjE&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+}
+
+/* Основной контент */
+.main-content {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.yes-button {
+    background-color: #ff4d6d;
+    color: white;
+    text-decoration: none;
+}
+
+.yes-button:hover {
+    background-color: #ff3366;
+}
+
+.no-button {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.no-button:disabled {
+    cursor: not-allowed;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-out;
+}
